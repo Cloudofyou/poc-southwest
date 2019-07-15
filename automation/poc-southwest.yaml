@@ -32,6 +32,10 @@
          - add bridge stp treeprio 8192
          - add ospf network 172.16.0.0/16 area 0.0.0.0
          - add ospf network 192.168.150.2/32 area 0.0.0.0
+         - add bond bond01 bond slaves swp1
+         - add bond bond02 bond slaves swp2
+         - add bond bond01 bridge trunk vlans 100
+         - add bond bond02 bridge trunk vlans 100
 
        commit: true
 
@@ -41,7 +45,7 @@
      nclu:
        commands:
 
-         - add loopback lo ip address 10.19.241.3/32
+         - add loopback lo ip address 192.168.150.3/32
          - add interface swp49 ip address 172.16.2.6/30
          - add vlan 100 ip address 172.16.1.3/24
          - add vlan 100 ip address-virtual 00:00:5e:00:a0:01 172.16.1.1/24
@@ -53,6 +57,10 @@
          - add bridge stp treeprio 8192
          - add ospf network 172.16.0.0/16 area 0.0.0.0
          - add ospf network 192.168.150.3/32 area 0.0.0.0
+         - add bond bond01 bond slaves swp1
+         - add bond bond02 bond slaves swp2
+         - add bond bond01 bridge trunk vlans 100
+         - add bond bond02 bridge trunk vlans 100
 
        commit: true
 
