@@ -6,7 +6,7 @@ This is an Ansible demo which configures the described topology for the Southwes
 
 ### Network Diagram:
 
-![Network Diagram](https://github.com/Cloudofyou/poc-southwest/blob/master/documentation/poc-southwest.png)
+![Network Diagram](https://github.com/Cloudofyou/poc-southwest/blob/master/documentation/POC-Southwest-Diag1.png)
 
 ### Initializing the demo environment:
 
