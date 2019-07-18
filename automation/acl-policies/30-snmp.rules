@@ -13,3 +13,8 @@ SNMP_HOSTS = "172.23.16.247/32,10.4.112.5/32,172.18.112.5/32"
 -A $INGRESS_CHAIN  -p tcp --dport 161 -j DROP
 -A $INGRESS_CHAIN  -p udp --dport 161 -s $SNMP_HOSTS -j ACCEPT
 -A $INGRESS_CHAIN  -p udp --dport 161 -j DROP
+-A $INGRESS_CHAIN  -p tcp --dport 162 -s $SNMP_HOSTS -j ACCEPT
+-A $INGRESS_CHAIN  -p tcp --dport 162 -j DROP
+-A $INGRESS_CHAIN  -p udp --dport 162 -s $SNMP_HOSTS -j ACCEPT
+-A $INGRESS_CHAIN  -p udp --dport 162 -j DROP
+
