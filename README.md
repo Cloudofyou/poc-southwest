@@ -58,24 +58,24 @@ First, make sure that the following is currently running on your machine:
 2. Enter the password on each server:
 
    ```CumulusLinux!```
+ 
+3. Update local authentication on each server so you won't have to use passwords to access the servers:
+
+```wget -O /home/cumulus/.ssh/authorized_keys "http://192.168.200.254/authorized_keys"```
    
-3. Download and install traceroute:
+4. Download and install traceroute:
 
    ```sudo apt-get install traceroute```
    
    ```exit```
 
-4. Run the following the poc-oneok/automation directory:
+5. Run the following from the poc-oneok/automation directory on the OOB-Mgmt-Server:
 
     ```./provision.sh```
 
 ### Errata
 
 ### Temp
-
-```ansible servers -a `wget -O /home/cumulus/.ssh/authorized_keys "http://192.168.200.254/authorized_keys"` ```
-
-```ansible storage -a `wget -O /home/cumulus/.ssh/authorized_keys "http://192.168.200.254/authorized_keys"` ```
 
 1. To shutdown the demo, run the following command from the vx-simulation directory:
 
@@ -87,7 +87,7 @@ First, make sure that the following is currently running on your machine:
 
 3. The following command was used to run the Topology Converter within the vx-simulation directory:
 
-    ```python2 topology_converter.py poc-oneok.dot -c```
+    ```python2 topology_converter.py site.dot -c```
 
     After the above command is executed, the following configuration changes are necessary:
 
