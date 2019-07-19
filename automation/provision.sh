@@ -1,3 +1,4 @@
 #!/bin/bash
 ansible-playbook poc-southwest.yaml
-./acl-policies/install-acls.sh
+cd acl-policies
+./install-acls.sh
