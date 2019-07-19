@@ -1,0 +1,13 @@
+INGRESS_INTF = swp+
+
+INGRESS_CHAIN = INPUT
+
+INNFWD_CHAIN = INPUT,FORWARD
+
+SSH_HOSTS = "172.16.1.101/32,192.168.200.0/24"
+
+[iptables]
+
+-A $INGRESS_CHAIN  -p tcp --dport 22 -s $SSH_HOSTS -j ACCEPT
+-A $INGRESS_CHAIN  -p tcp --dport 22 -j DROP
+
