@@ -1,0 +1,71 @@
+net add acl ipv4 40acl accept tcp source-ip 172.18.236.81/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept tcp source-ip 172.18.236.81/32 source-port any dest-ip any dest-port 162
+net add acl ipv4 40acl accept udp source-ip 172.18.236.81/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept udp source-ip 172.18.236.81/32 source-port any dest-ip any dest-port 162
+
+net add acl ipv4 40acl accept tcp source-ip 172.31.31.175/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept tcp source-ip 172.31.31.175/32 source-port any dest-ip any dest-port 162
+net add acl ipv4 40acl accept udp source-ip 172.31.31.175/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept udp source-ip 172.31.31.175/32 source-port any dest-ip any dest-port 162
+
+net add acl ipv4 40acl accept tcp source-ip 172.23.30.147/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept tcp source-ip 172.23.30.147/32 source-port any dest-ip any dest-port 162
+net add acl ipv4 40acl accept udp source-ip 172.23.30.147/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept udp source-ip 172.23.30.147/32 source-port any dest-ip any dest-port 162
+
+net add acl ipv4 40acl accept tcp source-ip 10.33.12.24/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept tcp source-ip 10.33.12.24/32 source-port any dest-ip any dest-port 162
+net add acl ipv4 40acl accept udp source-ip 10.33.12.24/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept udp source-ip 10.33.12.24/32 source-port any dest-ip any dest-port 162
+
+net add acl ipv4 40acl accept tcp source-ip 10.33.12.96/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept tcp source-ip 10.33.12.96/32 source-port any dest-ip any dest-port 162
+net add acl ipv4 40acl accept udp source-ip 10.33.12.96/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept udp source-ip 10.33.12.96/32 source-port any dest-ip any dest-port 162
+
+net add acl ipv4 40acl accept tcp source-ip 172.23.16.46/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept tcp source-ip 172.23.16.46/32 source-port any dest-ip any dest-port 162
+net add acl ipv4 40acl accept udp source-ip 172.23.16.46/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept udp source-ip 172.23.16.46/32 source-port any dest-ip any dest-port 162
+
+net add acl ipv4 40acl accept tcp source-ip 172.27.16.6/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept tcp source-ip 172.27.16.6/32 source-port any dest-ip any dest-port 162
+net add acl ipv4 40acl accept udp source-ip 172.27.16.6/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept udp source-ip 172.27.16.6/32 source-port any dest-ip any dest-port 162
+
+net add acl ipv4 40acl accept tcp source-ip 172.27.26.5/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept tcp source-ip 172.27.26.5/32 source-port any dest-ip any dest-port 162
+net add acl ipv4 40acl accept udp source-ip 172.27.26.5/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept udp source-ip 172.27.26.5/32 source-port any dest-ip any dest-port 162
+
+net add acl ipv4 40acl accept tcp source-ip 172.31.16.7/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept tcp source-ip 172.31.16.7/32 source-port any dest-ip any dest-port 162
+net add acl ipv4 40acl accept udp source-ip 172.31.16.7/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept udp source-ip 172.31.16.7/32 source-port any dest-ip any dest-port 162
+
+net add acl ipv4 40acl accept tcp source-ip 172.31.16.9/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept tcp source-ip 172.31.16.9/32 source-port any dest-ip any dest-port 162
+net add acl ipv4 40acl accept udp source-ip 172.31.16.9/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept udp source-ip 172.31.16.9/32 source-port any dest-ip any dest-port 162
+
+net add acl ipv4 40acl accept tcp source-ip 172.31.16.8/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept tcp source-ip 172.31.16.8/32 source-port any dest-ip any dest-port 162
+net add acl ipv4 40acl accept udp source-ip 172.31.16.8/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept udp source-ip 172.31.16.8/32 source-port any dest-ip any dest-port 162
+
+net add acl ipv4 40acl accept tcp source-ip 10.247.6.25/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept tcp source-ip 10.247.6.25/32 source-port any dest-ip any dest-port 162
+net add acl ipv4 40acl accept udp source-ip 10.247.6.25/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept udp source-ip 10.247.6.25/32 source-port any dest-ip any dest-port 162
+
+net add acl ipv4 40acl accept tcp source-ip 172.27.16.91/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept tcp source-ip 172.27.16.91/32 source-port any dest-ip any dest-port 162
+net add acl ipv4 40acl accept udp source-ip 172.27.16.91/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl accept udp source-ip 172.27.16.91/32 source-port any dest-ip any dest-port 162
+
+net add acl ipv4 40acl drop tcp source-ip any source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl drop tcp source-ip any source-port any dest-ip any dest-port 162
+net add acl ipv4 40acl drop udp source-ip any source-port any dest-ip any dest-port 161
+net add acl ipv4 40acl drop udp source-ip any source-port any dest-ip any dest-port 162
+
+net add control-plane acl ipv4 40acl inbound
