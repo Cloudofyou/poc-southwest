@@ -1,0 +1,21 @@
+net add acl ipv4 30acl accept tcp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 30acl accept tcp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 162
+net add acl ipv4 30acl accept udp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 30acl accept udp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 162
+
+net add acl ipv4 30acl accept tcp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 30acl accept tcp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 162
+net add acl ipv4 30acl accept udp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 30acl accept udp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 162
+
+net add acl ipv4 30acl accept tcp source-ip 172.18.112.5/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 30acl accept tcp source-ip 172.18.112.5/32 source-port any dest-ip any dest-port 162
+net add acl ipv4 30acl accept udp source-ip 172.18.112.5/32 source-port any dest-ip any dest-port 161
+net add acl ipv4 30acl accept udp source-ip 172.18.112.5/32 source-port any dest-ip any dest-port 162
+
+net add acl ipv4 30acl drop tcp source-ip any source-port any dest-ip any dest-port 161
+net add acl ipv4 30acl drop tcp source-ip any source-port any dest-ip any dest-port 162
+net add acl ipv4 30acl drop udp source-ip any source-port any dest-ip any dest-port 161
+net add acl ipv4 30acl drop udp source-ip any source-port any dest-ip any dest-port 162
+
+net add control-plane acl ipv4 30acl inbound
