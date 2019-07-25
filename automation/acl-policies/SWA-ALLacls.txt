@@ -158,14 +158,6 @@ net add acl ipv4 ALLacl accept tcp source-ip 172.31.16.124/32 source-port any de
 net add acl ipv4 ALLacl accept tcp source-ip 172.31.16.124/32 source-port any dest-ip any dest-port 162
 net add acl ipv4 ALLacl accept udp source-ip 172.31.16.124/32 source-port any dest-ip any dest-port 161
 net add acl ipv4 ALLacl accept udp source-ip 172.31.16.124/32 source-port any dest-ip any dest-port 162
-net add acl ipv4 ALLacl accept tcp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 161
-net add acl ipv4 ALLacl accept tcp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 162
-net add acl ipv4 ALLacl accept udp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 161
-net add acl ipv4 ALLacl accept udp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 162
-net add acl ipv4 ALLacl accept tcp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 161
-net add acl ipv4 ALLacl accept tcp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 162
-net add acl ipv4 ALLacl accept udp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 161
-net add acl ipv4 ALLacl accept udp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 162
 net add acl ipv4 ALLacl accept tcp source-ip 172.18.236.81/32 source-port any dest-ip any dest-port 161
 net add acl ipv4 ALLacl accept tcp source-ip 172.18.236.81/32 source-port any dest-ip any dest-port 162
 net add acl ipv4 ALLacl accept udp source-ip 172.18.236.81/32 source-port any dest-ip any dest-port 161
