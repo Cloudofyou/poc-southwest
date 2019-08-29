@@ -82,7 +82,7 @@
          - add time ntp source eth0
          - add snmp-server listening-address localhost
          - add snmp-server readonly-community password access any
-         - add snmp-server readonly-community password REMOVED access any
+         - add snmp-server readonly-community password access any
          - add snmp-server system-contact Brian Koch 214-792-7049
          - add snmp-server system-location SWA PDC Test Lab
          - add snmp-server system-name pdctestcumulus01
@@ -235,7 +235,7 @@
          - add time ntp source eth0
          - add snmp-server listening-address localhost
          - add snmp-server readonly-community password access any
-         - add snmp-server readonly-community password REMOVED access any
+         - add snmp-server readonly-community password access any
          - add snmp-server system-contact Brian Koch 214-792-7049
          - add snmp-server system-location SWA PDC Test Lab
          - add snmp-server system-name pdctestcumulus02
