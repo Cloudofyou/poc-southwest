@@ -360,7 +360,7 @@ end
     device.vm.hostname = "3048-1" 
     
     device.vm.box = "CumulusCommunity/cumulus-vx"
-    device.vm.box_version = "3.7.6"
+    device.vm.box_version = "3.7.8"
 
     device.vm.provider :libvirt do |v|
       v.memory = 1024
@@ -1157,7 +1157,7 @@ end
     device.vm.hostname = "3048-2" 
     
     device.vm.box = "CumulusCommunity/cumulus-vx"
-    device.vm.box_version = "3.7.6"
+    device.vm.box_version = "3.7.8"
 
     device.vm.provider :libvirt do |v|
       v.memory = 1024
@@ -2118,7 +2118,7 @@ end
     device.vm.hostname = "3850-2" 
     
     device.vm.box = "CumulusCommunity/cumulus-vx"
-    device.vm.box_version = "3.7.6"
+    device.vm.box_version = "3.7.8"
 
     device.vm.provider :libvirt do |v|
       v.memory = 1024
@@ -2257,7 +2257,7 @@ end
     device.vm.hostname = "3850-1" 
     
     device.vm.box = "CumulusCommunity/cumulus-vx"
-    device.vm.box_version = "3.7.6"
+    device.vm.box_version = "3.7.8"
 
     device.vm.provider :libvirt do |v|
       v.memory = 1024
@@ -2396,7 +2396,7 @@ end
     device.vm.hostname = "internet" 
     
     device.vm.box = "CumulusCommunity/cumulus-vx"
-    device.vm.box_version = "3.7.6"
+    device.vm.box_version = "3.7.8"
 
     device.vm.provider :libvirt do |v|
       v.memory = 768

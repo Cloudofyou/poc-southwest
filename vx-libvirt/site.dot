@@ -1,9 +1,9 @@
 graph site {
- "internet" [function="internet" os="CumulusCommunity/cumulus-vx" version="3.7.6" memory="768" config="./helper_scripts/extra_switch_config.sh" mgmt_ip="192.168.200.1"]
- "3850-1" [function="cisco" os="CumulusCommunity/cumulus-vx" version="3.7.6" memory="1024" config="./helper_scripts/extra_switch_config.sh" mgmt_ip="192.168.200.2"]
- "3850-2" [function="cisco" os="CumulusCommunity/cumulus-vx" version="3.7.6" memory="1024" config="./helper_scripts/extra_switch_config.sh" mgmt_ip="192.168.200.3"]
- "3048-1" [function="leaf" os="CumulusCommunity/cumulus-vx" version="3.7.6" memory="1024" config="./helper_scripts/extra_switch_config.sh" mgmt_ip="192.168.200.6" ports="52"]
- "3048-2" [function="leaf" os="CumulusCommunity/cumulus-vx" version="3.7.6" memory="1024" config="./helper_scripts/extra_switch_config.sh" mgmt_ip="192.168.200.7" ports="52"]
+ "internet" [function="internet" os="CumulusCommunity/cumulus-vx" version="3.7.8" memory="768" config="./helper_scripts/extra_switch_config.sh" mgmt_ip="192.168.200.1"]
+ "3850-1" [function="cisco" os="CumulusCommunity/cumulus-vx" version="3.7.8" memory="1024" config="./helper_scripts/extra_switch_config.sh" mgmt_ip="192.168.200.2"]
+ "3850-2" [function="cisco" os="CumulusCommunity/cumulus-vx" version="3.7.8" memory="1024" config="./helper_scripts/extra_switch_config.sh" mgmt_ip="192.168.200.3"]
+ "3048-1" [function="leaf" os="CumulusCommunity/cumulus-vx" version="3.7.8" memory="1024" config="./helper_scripts/extra_switch_config.sh" ports="52" mgmt_ip="192.168.200.6"]
+ "3048-2" [function="leaf" os="CumulusCommunity/cumulus-vx" version="3.7.8" memory="1024" config="./helper_scripts/extra_switch_config.sh" ports="52" mgmt_ip="192.168.200.7"]
  "server01" [function="host" os="yk0/ubuntu-xenial" memory="768" config="./helper_scripts/extra_server_config.sh" mgmt_ip="192.168.200.10"]
  "server02" [function="host" os="yk0/ubuntu-xenial" memory="768" config="./helper_scripts/extra_server_config.sh" mgmt_ip="192.168.200.11"]
 
