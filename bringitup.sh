@@ -1,6 +1,6 @@
 #!/bin/bash
 cd vx_simulation
-vagrant up oob-mgmt-server oob-mgmt-switch
+vagrant up oob-mgmt-server oob-mgmt-switch --provider=libvirt
 wait 10
-vagrant up
+vagrant up --provider=libvirt
 
