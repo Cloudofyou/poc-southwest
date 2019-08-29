@@ -362,7 +362,7 @@
          - add acl ipv4 ACL73-SSH priority 460 drop tcp source-ip any source-port any dest-ip any dest-port 22
          - add control-plane acl ipv4 ACL73-SSH inbound
          - add control-plane acl ipv4 ACL25-SNMP inbound
-         - add hostname pdctestcumulus01
+         - add hostname pdctestcumulus02
          - add dot1x radius accounting-port 1813
          - add dot1x max-number-stations 4
          - add dot1x radius authentication-port 1812
