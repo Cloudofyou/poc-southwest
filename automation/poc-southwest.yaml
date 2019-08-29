@@ -71,217 +71,150 @@
      nclu:
        commands:
 
-         - add bond bond01 bond slaves swp49-50
-         - add bond bond01 bridge trunk vlans 100
-         - add vlan 100
-         - add interface swp1 bridge access 100
-         - add acl ipv4 73acl accept tcp source-ip 172.27.30.161/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.31.160/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.16.174/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.16.178/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.16.177/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.23.16.45/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.31.16.128/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.31.31.128/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.4.23.55/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.30.144/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.16.155/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.16.154/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.23.16.235/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.23.16.234/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.23.16.231/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.16.247/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.16.244/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.31.16.240/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.23.16.244/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.4.112.15/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.4.22.152/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.4.16.150/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.31.16.47/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.4.22.150/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.4.22.151/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.31.30.60/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.4.23.177/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.16.13/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.23.16.31/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.23.16.30/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.16.31/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.16.30/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.18.112.15/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.31.16.98/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.31.16.102/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.31.16.101/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.18.112.5/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.26.14.99/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.26.14.100/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.33.12.196/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.27.56.0/22 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.37.56.0/22 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.18.66.0/23 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 135.89.118.112/28 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 135.89.118.48/28 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl drop tcp source-ip any source-port any dest-ip any dest-port 22
-         - add acl ipv4 25acl accept tcp source-ip 172.23.53.154/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.23.53.154/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.23.53.154/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.23.53.154/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 10.23.16.45/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 10.23.16.45/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 10.23.16.45/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 10.23.16.45/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.135/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.135/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.135/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.135/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.136/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.136/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.136/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.136/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.155/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.155/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.155/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.155/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.154/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.154/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.154/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.154/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.27.166.89/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.27.166.89/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.27.166.89/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.27.166.89/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 10.4.112.15/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 10.4.112.15/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 10.4.112.15/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 10.4.112.15/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.47/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.47/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.47/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.47/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.41/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.41/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.41/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.41/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.30.60/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.30.60/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.30.60/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.30.60/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 10.34.166.31/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 10.34.166.31/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 10.34.166.31/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 10.34.166.31/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 10.18.166.41/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 10.18.166.41/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 10.18.166.41/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 10.18.166.41/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.6/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.6/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.6/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.6/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.5/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.5/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.5/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.5/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.7/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.7/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.7/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.7/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.30.10/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.30.10/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.30.10/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.30.10/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.13/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.13/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.13/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.13/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.8/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.8/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.8/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.8/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.12/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.12/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.12/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.12/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.18.112.15/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.18.112.15/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.18.112.15/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.18.112.15/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.18.112.5/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.18.112.5/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.18.112.5/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.18.112.5/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.123/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.123/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.123/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.123/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.122/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.122/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.122/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.122/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.121/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.121/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.121/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.121/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.124/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.124/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.124/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.124/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept tcp source-ip 172.18.236.81/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept tcp source-ip 172.18.236.81/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept udp source-ip 172.18.236.81/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept udp source-ip 172.18.236.81/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept tcp source-ip 172.31.31.175/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept tcp source-ip 172.31.31.175/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept udp source-ip 172.31.31.175/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept udp source-ip 172.31.31.175/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept tcp source-ip 172.23.30.147/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept tcp source-ip 172.23.30.147/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept udp source-ip 172.23.30.147/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept udp source-ip 172.23.30.147/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept tcp source-ip 10.33.12.24/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept tcp source-ip 10.33.12.24/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept udp source-ip 10.33.12.24/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept udp source-ip 10.33.12.24/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept tcp source-ip 10.33.12.96/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept tcp source-ip 10.33.12.96/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept udp source-ip 10.33.12.96/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept udp source-ip 10.33.12.96/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept tcp source-ip 172.23.16.46/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept tcp source-ip 172.23.16.46/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept udp source-ip 172.23.16.46/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept udp source-ip 172.23.16.46/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept tcp source-ip 172.27.26.5/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept tcp source-ip 172.27.26.5/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept udp source-ip 172.27.26.5/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept udp source-ip 172.27.26.5/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept tcp source-ip 172.31.16.9/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept tcp source-ip 172.31.16.9/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept udp source-ip 172.31.16.9/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept udp source-ip 172.31.16.9/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept tcp source-ip 10.247.6.25/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept tcp source-ip 10.247.6.25/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept udp source-ip 10.247.6.25/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept udp source-ip 10.247.6.25/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept tcp source-ip 172.27.16.91/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept tcp source-ip 172.27.16.91/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept udp source-ip 172.27.16.91/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept udp source-ip 172.27.16.91/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl drop tcp source-ip any source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl drop tcp source-ip any source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl drop udp source-ip any source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl drop udp source-ip any source-port any dest-ip any dest-port 162
-         - add control-plane acl ipv4 73acl inbound
-         - add control-plane acl ipv4 25acl inbound
-         - add control-plane acl ipv4 40acl inbound
+         - add syslog host ipv4 172.23.40.22 port udp 514
+         - add syslog host ipv4 172.31.31.246 port udp 514
+         - add syslog host ipv4 172.27.10.149 port udp 514
+         - add syslog host ipv4 172.23.31.232 port udp 514
+         - add syslog host ipv4 172.31.16.47 port udp 514
+         - add syslog host ipv4 172.27.166.61 port udp 20514
+         - add syslog host ipv4 172.23.166.42 port udp 20514
+         - add time ntp server 172.26.24.246 iburst
+         - add time ntp source eth0
+         - add snmp-server listening-address localhost
+         - add snmp-server readonly-community password access any
+         - add snmp-server readonly-community password REMOVED access any
+         - add snmp-server system-contact Brian Koch 214-792-7049
+         - add snmp-server system-location SWA PDC Test Lab
+         - add snmp-server system-name pdctestcumulus01
+         - add bgp autonomous-system 65111
+         - add routing defaults datacenter
+         - add routing service integrated-vtysh-config
+         - add routing log syslog informational
+         - add routing line vty exec-timeout 0 0
+         - add dns nameserver ipv4 172.31.10.11
+         - add dns nameserver ipv4 172.23.10.10
+         - add bond bond0 bond slaves swp47-48
+         - add bond bond0 bridge vids 1,11-12,969
+         - add bridge bridge ports bond0,swp1
+         - add bridge bridge vids 1,11-12,969
+         - add bridge bridge vlan-aware
+         - add interface swp1 bridge pvid 11
+         - add interface swp1 bridge vids 12
+         - add interface swp1 link autoneg on
+         - add interface swp1 stp bpduguard
+         - add interface swp1 stp portadminedge
+         - add interface swp47-48
+         - add vlan 11 alias data
+         - add vlan 11 vlan-id 11
+         - add vlan 11 vlan-raw-device bridge
+         - add vlan 12 alias voice
+         - add vlan 12 vlan-id 12
+         - add vlan 12 vlan-raw-device bridge
+         - add vlan 969 alias management
+         - add vlan 969 ip address 10.35.117.30/24
+         - add vlan 969 ip gateway 10.35.117.11
+         - add vlan 969 vlan-id 969
+         - add vlan 969 vlan-raw-device bridge
+         - add acl ipv4 ACL25-SNMP priority 10 accept tcp source-ip 172.23.53.154/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 20 accept udp source-ip 172.23.53.154/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 30 accept tcp source-ip 10.23.16.45/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 40 accept udp source-ip 10.23.16.45/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 50 accept tcp source-ip 172.27.16.155/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 60 accept udp source-ip 172.27.16.155/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 70 accept tcp source-ip 172.27.16.154/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 80 accept udp source-ip 172.27.16.154/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 90 accept tcp source-ip 172.27.166.89/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 100 accept udp source-ip 172.27.166.89/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 110 accept tcp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 120 accept udp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 130 accept tcp source-ip 10.4.112.15/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 140 accept udp source-ip 10.4.112.15/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 150 accept tcp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 160 accept udp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 170 accept tcp source-ip 172.31.16.47/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 180 accept udp source-ip 172.31.16.47/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 190 accept tcp source-ip 172.27.16.41/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 200 accept udp source-ip 172.27.16.41/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 210 accept tcp source-ip 172.31.30.60/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 220 accept udp source-ip 172.31.30.60/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 230 accept tcp source-ip 10.34.166.31/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 240 accept udp source-ip 10.34.166.31/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 250 accept tcp source-ip 10.18.166.41/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 260 accept udp source-ip 10.18.166.41/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 270 accept tcp source-ip 172.27.16.6/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 280 accept udp source-ip 172.27.16.6/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 290 accept tcp source-ip 172.27.16.5/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 300 accept udp source-ip 172.27.16.5/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 310 accept tcp source-ip 172.31.16.7/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 320 accept udp source-ip 172.31.16.7/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 330 accept tcp source-ip 172.31.30.10/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 340 accept udp source-ip 172.31.30.10/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 350 accept tcp source-ip 172.27.16.13/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 360 accept udp source-ip 172.27.16.13/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 370 accept tcp source-ip 172.31.16.8/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 380 accept udp source-ip 172.31.16.8/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 390 accept tcp source-ip 172.31.16.12/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 400 accept udp source-ip 172.31.16.12/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 410 accept tcp source-ip 172.18.112.15/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 420 accept udp source-ip 172.18.112.15/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 430 accept tcp source-ip 172.18.112.5/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 440 accept udp source-ip 172.18.112.5/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 450 drop tcp source-ip any source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 460 drop udp source-ip any source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL73-SSH priority 10 accept tcp source-ip 172.27.30.161/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 20 accept tcp source-ip 172.27.31.160/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 30 accept tcp source-ip 172.27.16.174/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 40 accept tcp source-ip 172.27.16.178/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 50 accept tcp source-ip 172.27.16.177/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 60 accept tcp source-ip 10.23.16.45/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 70 accept tcp source-ip 172.31.16.128/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 80 accept tcp source-ip 172.31.31.128/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 90 accept tcp source-ip 10.4.23.55/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 100 accept tcp source-ip 172.27.30.144/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 110 accept tcp source-ip 172.27.16.155/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 120 accept tcp source-ip 172.27.16.154/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 130 accept tcp source-ip 172.23.16.235/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 140 accept tcp source-ip 172.23.16.234/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 150 accept tcp source-ip 172.23.16.231/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 160 accept tcp source-ip 172.27.16.247/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 170 accept tcp source-ip 172.27.16.244/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 180 accept tcp source-ip 172.31.16.240/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 190 accept tcp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 200 accept tcp source-ip 172.23.16.244/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 210 accept tcp source-ip 10.4.112.15/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 220 accept tcp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 230 accept tcp source-ip 10.4.22.152/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 240 accept tcp source-ip 10.4.16.150/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 250 accept tcp source-ip 172.31.16.47/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 260 accept tcp source-ip 10.4.22.150/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 270 accept tcp source-ip 10.4.22.151/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 280 accept tcp source-ip 172.31.30.60/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 290 accept tcp source-ip 10.4.23.177/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 300 accept tcp source-ip 172.27.16.13/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 310 accept tcp source-ip 172.23.16.31/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 320 accept tcp source-ip 172.23.16.30/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 330 accept tcp source-ip 172.27.16.31/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 340 accept tcp source-ip 172.27.16.30/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 350 accept tcp source-ip 172.18.112.15/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 360 accept tcp source-ip 172.31.16.98/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 370 accept tcp source-ip 172.31.16.102/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 380 accept tcp source-ip 172.31.16.101/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 390 accept tcp source-ip 172.18.112.5/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 400 accept tcp source-ip 172.26.14.99/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 410 accept tcp source-ip 172.26.14.100/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 420 accept tcp source-ip 10.33.12.196/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 430 accept tcp source-ip 10.27.56.0/22 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 440 accept tcp source-ip 10.37.56.0/22 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 450 accept tcp source-ip 172.18.66.0/23 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 460 drop tcp source-ip any source-port any dest-ip any dest-port 22
+         - add control-plane acl ipv4 ACL73-SSH inbound
+         - add control-plane acl ipv4 ACL25-SNMP inbound
+         - add hostname pdctestcumulus01
+         - add dot1x radius accounting-port 1813
+         - add dot1x max-number-stations 4
+         - add dot1x radius authentication-port 1812
+         - add dot1x eap-reauth-period 0
+         - add dot1x mab-activation-delay 30
 
        commit: true
 
@@ -291,217 +224,150 @@
      nclu:
        commands:
 
-         - add bond bond01 bond slaves swp49-50
-         - add bond bond01 bridge trunk vlans 100
-         - add vlan 100
-         - add interface swp1 bridge access 100
-         - add acl ipv4 73acl accept tcp source-ip 172.27.30.161/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.31.160/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.16.174/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.16.178/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.16.177/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.23.16.45/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.31.16.128/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.31.31.128/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.4.23.55/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.30.144/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.16.155/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.16.154/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.23.16.235/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.23.16.234/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.23.16.231/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.16.247/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.16.244/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.31.16.240/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.23.16.244/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.4.112.15/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.4.22.152/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.4.16.150/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.31.16.47/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.4.22.150/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.4.22.151/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.31.30.60/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.4.23.177/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.16.13/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.23.16.31/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.23.16.30/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.16.31/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.27.16.30/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.18.112.15/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.31.16.98/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.31.16.102/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.31.16.101/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.18.112.5/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.26.14.99/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.26.14.100/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.33.12.196/32 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.27.56.0/22 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 10.37.56.0/22 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 172.18.66.0/23 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 135.89.118.112/28 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl accept tcp source-ip 135.89.118.48/28 source-port any dest-ip any dest-port 22
-         - add acl ipv4 73acl drop tcp source-ip any source-port any dest-ip any dest-port 22
-         - add acl ipv4 25acl accept tcp source-ip 172.23.53.154/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.23.53.154/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.23.53.154/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.23.53.154/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 10.23.16.45/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 10.23.16.45/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 10.23.16.45/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 10.23.16.45/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.135/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.135/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.135/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.135/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.136/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.136/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.136/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.136/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.155/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.155/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.155/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.155/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.154/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.154/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.154/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.154/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.27.166.89/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.27.166.89/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.27.166.89/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.27.166.89/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 10.4.112.15/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 10.4.112.15/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 10.4.112.15/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 10.4.112.15/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.47/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.47/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.47/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.47/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.41/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.41/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.41/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.41/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.30.60/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.30.60/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.30.60/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.30.60/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 10.34.166.31/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 10.34.166.31/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 10.34.166.31/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 10.34.166.31/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 10.18.166.41/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 10.18.166.41/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 10.18.166.41/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 10.18.166.41/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.6/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.6/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.6/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.6/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.5/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.5/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.5/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.5/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.7/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.7/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.7/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.7/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.30.10/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.30.10/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.30.10/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.30.10/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.13/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.27.16.13/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.13/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.27.16.13/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.8/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.8/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.8/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.8/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.12/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.12/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.12/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.12/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.18.112.15/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.18.112.15/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.18.112.15/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.18.112.15/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.18.112.5/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.18.112.5/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.18.112.5/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.18.112.5/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.123/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.123/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.123/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.123/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.122/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.122/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.122/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.122/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.121/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.121/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.121/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.121/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.124/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept tcp source-ip 172.31.16.124/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.124/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 25acl accept udp source-ip 172.31.16.124/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept tcp source-ip 172.18.236.81/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept tcp source-ip 172.18.236.81/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept udp source-ip 172.18.236.81/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept udp source-ip 172.18.236.81/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept tcp source-ip 172.31.31.175/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept tcp source-ip 172.31.31.175/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept udp source-ip 172.31.31.175/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept udp source-ip 172.31.31.175/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept tcp source-ip 172.23.30.147/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept tcp source-ip 172.23.30.147/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept udp source-ip 172.23.30.147/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept udp source-ip 172.23.30.147/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept tcp source-ip 10.33.12.24/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept tcp source-ip 10.33.12.24/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept udp source-ip 10.33.12.24/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept udp source-ip 10.33.12.24/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept tcp source-ip 10.33.12.96/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept tcp source-ip 10.33.12.96/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept udp source-ip 10.33.12.96/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept udp source-ip 10.33.12.96/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept tcp source-ip 172.23.16.46/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept tcp source-ip 172.23.16.46/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept udp source-ip 172.23.16.46/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept udp source-ip 172.23.16.46/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept tcp source-ip 172.27.26.5/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept tcp source-ip 172.27.26.5/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept udp source-ip 172.27.26.5/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept udp source-ip 172.27.26.5/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept tcp source-ip 172.31.16.9/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept tcp source-ip 172.31.16.9/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept udp source-ip 172.31.16.9/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept udp source-ip 172.31.16.9/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept tcp source-ip 10.247.6.25/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept tcp source-ip 10.247.6.25/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept udp source-ip 10.247.6.25/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept udp source-ip 10.247.6.25/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept tcp source-ip 172.27.16.91/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept tcp source-ip 172.27.16.91/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl accept udp source-ip 172.27.16.91/32 source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl accept udp source-ip 172.27.16.91/32 source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl drop tcp source-ip any source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl drop tcp source-ip any source-port any dest-ip any dest-port 162
-         - add acl ipv4 40acl drop udp source-ip any source-port any dest-ip any dest-port 161
-         - add acl ipv4 40acl drop udp source-ip any source-port any dest-ip any dest-port 162
-         - add control-plane acl ipv4 73acl inbound
-         - add control-plane acl ipv4 25acl inbound
-         - add control-plane acl ipv4 40acl inbound
+         - add syslog host ipv4 172.23.40.22 port udp 514
+         - add syslog host ipv4 172.31.31.246 port udp 514
+         - add syslog host ipv4 172.27.10.149 port udp 514
+         - add syslog host ipv4 172.23.31.232 port udp 514
+         - add syslog host ipv4 172.31.16.47 port udp 514
+         - add syslog host ipv4 172.27.166.61 port udp 20514
+         - add syslog host ipv4 172.23.166.42 port udp 20514
+         - add time ntp server 172.26.24.246 iburst
+         - add time ntp source eth0
+         - add snmp-server listening-address localhost
+         - add snmp-server readonly-community password access any
+         - add snmp-server readonly-community password REMOVED access any
+         - add snmp-server system-contact Brian Koch 214-792-7049
+         - add snmp-server system-location SWA PDC Test Lab
+         - add snmp-server system-name pdctestcumulus02
+         - add bgp autonomous-system 65111
+         - add routing defaults datacenter
+         - add routing service integrated-vtysh-config
+         - add routing log syslog informational
+         - add routing line vty exec-timeout 0 0
+         - add dns nameserver ipv4 172.31.10.11
+         - add dns nameserver ipv4 172.23.10.10
+         - add bond bond0 bond slaves swp47-48
+         - add bond bond0 bridge vids 1,11-12,969
+         - add bridge bridge ports bond0,swp1
+         - add bridge bridge vids 1,11-12,969
+         - add bridge bridge vlan-aware
+         - add interface swp1 bridge pvid 11
+         - add interface swp1 bridge vids 12
+         - add interface swp1 link autoneg on
+         - add interface swp1 stp bpduguard
+         - add interface swp1 stp portadminedge
+         - add interface swp47-45
+         - add vlan 11 alias data
+         - add vlan 11 vlan-id 11
+         - add vlan 11 vlan-raw-device bridge
+         - add vlan 12 alias voice
+         - add vlan 12 vlan-id 12
+         - add vlan 12 vlan-raw-device bridge
+         - add vlan 969 alias management
+         - add vlan 969 ip address 10.35.117.31/24
+         - add vlan 969 ip gateway 10.35.117.11
+         - add vlan 969 vlan-id 969
+         - add vlan 969 vlan-raw-device bridge
+         - add acl ipv4 ACL25-SNMP priority 10 accept tcp source-ip 172.23.53.154/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 20 accept udp source-ip 172.23.53.154/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 30 accept tcp source-ip 10.23.16.45/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 40 accept udp source-ip 10.23.16.45/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 50 accept tcp source-ip 172.27.16.155/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 60 accept udp source-ip 172.27.16.155/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 70 accept tcp source-ip 172.27.16.154/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 80 accept udp source-ip 172.27.16.154/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 90 accept tcp source-ip 172.27.166.89/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 100 accept udp source-ip 172.27.166.89/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 110 accept tcp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 120 accept udp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 130 accept tcp source-ip 10.4.112.15/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 140 accept udp source-ip 10.4.112.15/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 150 accept tcp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 160 accept udp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 170 accept tcp source-ip 172.31.16.47/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 180 accept udp source-ip 172.31.16.47/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 190 accept tcp source-ip 172.27.16.41/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 200 accept udp source-ip 172.27.16.41/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 210 accept tcp source-ip 172.31.30.60/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 220 accept udp source-ip 172.31.30.60/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 230 accept tcp source-ip 10.34.166.31/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 240 accept udp source-ip 10.34.166.31/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 250 accept tcp source-ip 10.18.166.41/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 260 accept udp source-ip 10.18.166.41/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 270 accept tcp source-ip 172.27.16.6/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 280 accept udp source-ip 172.27.16.6/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 290 accept tcp source-ip 172.27.16.5/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 300 accept udp source-ip 172.27.16.5/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 310 accept tcp source-ip 172.31.16.7/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 320 accept udp source-ip 172.31.16.7/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 330 accept tcp source-ip 172.31.30.10/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 340 accept udp source-ip 172.31.30.10/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 350 accept tcp source-ip 172.27.16.13/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 360 accept udp source-ip 172.27.16.13/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 370 accept tcp source-ip 172.31.16.8/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 380 accept udp source-ip 172.31.16.8/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 390 accept tcp source-ip 172.31.16.12/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 400 accept udp source-ip 172.31.16.12/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 410 accept tcp source-ip 172.18.112.15/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 420 accept udp source-ip 172.18.112.15/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 430 accept tcp source-ip 172.18.112.5/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 440 accept udp source-ip 172.18.112.5/32 source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 450 drop tcp source-ip any source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL25-SNMP priority 460 drop udp source-ip any source-port any dest-ip any dest-port 161-162
+         - add acl ipv4 ACL73-SSH priority 10 accept tcp source-ip 172.27.30.161/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 20 accept tcp source-ip 172.27.31.160/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 30 accept tcp source-ip 172.27.16.174/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 40 accept tcp source-ip 172.27.16.178/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 50 accept tcp source-ip 172.27.16.177/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 60 accept tcp source-ip 10.23.16.45/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 70 accept tcp source-ip 172.31.16.128/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 80 accept tcp source-ip 172.31.31.128/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 90 accept tcp source-ip 10.4.23.55/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 100 accept tcp source-ip 172.27.30.144/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 110 accept tcp source-ip 172.27.16.155/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 120 accept tcp source-ip 172.27.16.154/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 130 accept tcp source-ip 172.23.16.235/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 140 accept tcp source-ip 172.23.16.234/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 150 accept tcp source-ip 172.23.16.231/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 160 accept tcp source-ip 172.27.16.247/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 170 accept tcp source-ip 172.27.16.244/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 180 accept tcp source-ip 172.31.16.240/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 190 accept tcp source-ip 172.23.16.247/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 200 accept tcp source-ip 172.23.16.244/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 210 accept tcp source-ip 10.4.112.15/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 220 accept tcp source-ip 10.4.112.5/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 230 accept tcp source-ip 10.4.22.152/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 240 accept tcp source-ip 10.4.16.150/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 250 accept tcp source-ip 172.31.16.47/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 260 accept tcp source-ip 10.4.22.150/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 270 accept tcp source-ip 10.4.22.151/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 280 accept tcp source-ip 172.31.30.60/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 290 accept tcp source-ip 10.4.23.177/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 300 accept tcp source-ip 172.27.16.13/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 310 accept tcp source-ip 172.23.16.31/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 320 accept tcp source-ip 172.23.16.30/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 330 accept tcp source-ip 172.27.16.31/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 340 accept tcp source-ip 172.27.16.30/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 350 accept tcp source-ip 172.18.112.15/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 360 accept tcp source-ip 172.31.16.98/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 370 accept tcp source-ip 172.31.16.102/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 380 accept tcp source-ip 172.31.16.101/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 390 accept tcp source-ip 172.18.112.5/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 400 accept tcp source-ip 172.26.14.99/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 410 accept tcp source-ip 172.26.14.100/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 420 accept tcp source-ip 10.33.12.196/32 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 430 accept tcp source-ip 10.27.56.0/22 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 440 accept tcp source-ip 10.37.56.0/22 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 450 accept tcp source-ip 172.18.66.0/23 source-port any dest-ip any dest-port 22
+         - add acl ipv4 ACL73-SSH priority 460 drop tcp source-ip any source-port any dest-ip any dest-port 22
+         - add control-plane acl ipv4 ACL73-SSH inbound
+         - add control-plane acl ipv4 ACL25-SNMP inbound
+         - add hostname pdctestcumulus01
+         - add dot1x radius accounting-port 1813
+         - add dot1x max-number-stations 4
+         - add dot1x radius authentication-port 1812
+         - add dot1x eap-reauth-period 0
+         - add dot1x mab-activation-delay 30
 
        commit: true
 
