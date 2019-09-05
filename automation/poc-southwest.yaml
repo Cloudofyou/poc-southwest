@@ -100,7 +100,6 @@
          - add bridge bridge vlan-aware
          - add interface swp1-46 bridge pvid 11
          - add interface swp1-46 bridge vids 12
-         - add interface swp1-46 link autoneg on
          - add interface swp1-46 stp bpduguard
          - add interface swp1-46 stp portadminedge
          - add interface swp47-50
@@ -253,7 +252,6 @@
          - add bridge bridge vlan-aware
          - add interface swp1-46 bridge pvid 11
          - add interface swp1-46 bridge vids 12
-         - add interface swp1-46 link autoneg on
          - add interface swp1-46 stp bpduguard
          - add interface swp1-46 stp portadminedge
          - add interface swp47-50
